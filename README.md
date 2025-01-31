@@ -6,7 +6,7 @@ This project aims to classify lung images using Convolutional Neural Networks (C
 ## Directory Structure
 The project directory is structured as follows:
 
-
+```
 ├── `README.md`                     # Project overview and instructions
 ├── `XRay-CSVs/`                    # CSV and Excel files containing metadata and image data
 │   ├── `COVID.metadata.xlsx`       # Metadata for COVID-19 images
@@ -33,7 +33,7 @@ The project directory is structured as follows:
 │   └── `Preprocessing.ipynb`       # Notebook for data preprocessing
 ├── `pkl_files/`                    # Directory for preprocessed image files in pickle format
 │   └── `img_preprocessed32.pkl`    # Preprocessed images with 32x32 resolution
-
+```
 
 ## Usage
 1. Clone the repository.
