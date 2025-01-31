@@ -1,7 +1,10 @@
 # Final-project
 
 ## Overview
-This project aims to classify lung images using Convolutional Neural Networks (CNNs). The dataset includes images of various sizes and corresponding labels for different lung conditions such as COVID-19, Viral Pneumonia, and Lung Opacity.
+This project aims to classify lung images using Convolutional Neural Networks (CNNs). The dataset includes images of various sizes and corresponding labels for different lung conditions such as COVID-19, Viral Pneumonia, and Lung Opacity. 
+
+## Google Drive
+Google Drive has the majority of the data of the project, the link is https://drive.google.com/drive/folders/1ZcW3BefqcWtmretHrRnnih8GQxFUadbP?usp=drive_link 
 
 ## Directory Structure
 The project directory is structured as follows:
@@ -29,6 +32,7 @@ The project directory is structured as follows:
 │   ├── `CNN_Branching_Model_32.ipynb` # Notebook for CNN branching model with 32x32 images
 │   ├── `CNN_Model_Classification_32.ipynb` # Notebook for CNN classification model with 32x32 images
 │   ├── `CNN_Model_Classification_64.ipynb` # Notebook for CNN classification model with 64x64 images
+│   ├── `CNN_Model_Classification_128.ipynb` # Notebook for CNN classification model with 128x128 images
 │   ├── `Gradio.ipynb`              # Notebook for Gradio interface
 │   └── `Preprocessing.ipynb`       # Notebook for data preprocessing
 ├── `pkl_files/`                    # Directory for preprocessed image files in pickle format
@@ -87,5 +91,6 @@ References:
 - [Chest X-ray Pneumonia](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+The dataset used in this project is licensed under Creative Commons License. For additional information please visit https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+The project is licensed under the MIT license.
 ```
