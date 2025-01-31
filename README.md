@@ -46,8 +46,8 @@ The images are stored in the `images` folder in the following pickle files:
 
 ## Dependencies
 Make sure you have the following dependencies installed:
-- TensorFlow
 - Keras
+- TensorFlow
 - NumPy
 - Pandas
 - Matplotlib
