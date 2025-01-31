@@ -6,48 +6,45 @@ This project aims to classify lung images using Convolutional Neural Networks (C
 ## Directory Structure
 The project directory is structured as follows:
 
-## File Descriptions
-- `images/`: Contains preprocessed image files in pickle format.
-  - `img_preprocessed32.pkl`: Contains 32x32 images.
-  - `img_preprocessed64.pkl`: Contains 64x64 images.
-  - `img_preprocessed128.pkl`: Contains 128x128 images.
-  - `img_preprocessed299.pkl`: Contains 299x299 images.
-- `covid_image_data.csv`, `normal_image_data.csv`, `opacity_image_data.csv`, `pneumonia_image_data.csv`: CSV files containing metadata for each category.
-- `COVID.metadata.xlsx`, `Lung_Opacity.metadata.xlsx`, `Normal.metadata.xlsx`, `Viral Pneumonia.metadata.xlsx`: Excel files containing detailed metadata for each category.
-- `merged_image_data.csv`: CSV file containing merged metadata from all categories.
-- `branching_steps.ipynb`: Jupyter notebook for branching steps.
-- `CNN_Lungs.ipynb`: Main Jupyter notebook for CNN model.
-- `Lungs_CNN_Amar_32.ipynb`, `Lungs_CNN_Amar_64.ipynb`, `Lungs_CNN_Amar_128.ipynb`, `Lungs_CNN_Amar_299.ipynb`: Jupyter notebooks for training the model on different image sizes.
-- `Preprocessing.ipynb`: Jupyter notebook for data preprocessing.
-- `README.md`: This README file.
-- `README.md.txt`: Original README file with additional information.
 
-## Notebooks
-There are four main Jupyter notebooks, each corresponding to a different image size:
+├── `README.md`                     # Project overview and instructions
+├── `XRay-CSVs/`                    # CSV and Excel files containing metadata and image data
+│   ├── `COVID.metadata.xlsx`       # Metadata for COVID-19 images
+│   ├── `Lung_Opacity.metadata.xlsx`# Metadata for Lung Opacity images
+│   ├── `Normal.metadata.xlsx`      # Metadata for Normal images
+│   ├── `Viral Pneumonia.metadata.xlsx` # Metadata for Viral Pneumonia images
+│   ├── `covid_image_data.csv`      # CSV file with COVID-19 image data
+│   ├── `merged_image_data.csv`     # CSV file with merged image data
+│   ├── `normal_image_data.csv`     # CSV file with Normal image data
+│   ├── `opacity_image_data.csv`    # CSV file with Lung Opacity image data
+│   └── `pneumonia_image_data.csv`  # CSV file with Viral Pneumonia image data
+├── `X_Ray_Analysis_Final.pptx`     # Final presentation of X-ray analysis
+├── `X_Ray_Images/`                 # Directory containing X-ray images
+│   ├── `COVID/`                    # Folder with COVID-19 images
+│   ├── `Lung_Opacity/`             # Folder with Lung Opacity images
+│   ├── `Normal/`                   # Folder with Normal images
+│   └── `Viral_Pneumonia/`          # Folder with Viral Pneumonia images
+├── `archive/`                      # Archive folder for backup and old files
+├── `notebooks/`                    # Jupyter notebooks for model training and analysis
+│   ├── `CNN_Branching_Model_32.ipynb` # Notebook for CNN branching model with 32x32 images
+│   ├── `CNN_Model_Classification_32.ipynb` # Notebook for CNN classification model with 32x32 images
+│   ├── `CNN_Model_Classification_64.ipynb` # Notebook for CNN classification model with 64x64 images
+│   ├── `Gradio.ipynb`              # Notebook for Gradio interface
+│   └── `Preprocessing.ipynb`       # Notebook for data preprocessing
+├── `pkl_files/`                    # Directory for preprocessed image files in pickle format
+│   └── `img_preprocessed32.pkl`    # Preprocessed images with 32x32 resolution
 
-- `Lungs_CNN_Amar_32.ipynb`: Processes and trains the model on 32x32 images.
-- `Lungs_CNN_Amar_64.ipynb`: Processes and trains the model on 64x64 images.
-- `Lungs_CNN_Amar_128.ipynb`: Processes and trains the model on 128x128 images.
-- `Lungs_CNN_Amar_299.ipynb`: Processes and trains the model on 299x299 images.
-
-## Data
-The images are stored in the `images` folder in the following pickle files:
-
-- `img_preprocessed32.pkl`: Contains 32x32 images.
-- `img_preprocessed64.pkl`: Contains 64x64 images.
-- `img_preprocessed128.pkl`: Contains 128x128 images.
-- `img_preprocessed299.pkl`: Contains 299x299 images.
 
 ## Usage
 1. Clone the repository.
 2. Ensure you have the necessary dependencies installed.
 3. Run the preprocessing notebook `Preprocessing.ipynb` to prepare the data.
-4. Open and run the desired notebook (`Lungs_CNN_Amar_32.ipynb`, `Lungs_CNN_Amar_64.ipynb`, `Lungs_CNN_Amar_128.ipynb`, or `Lungs_CNN_Amar_299.ipynb`) to train the model on the corresponding image size.
+4. Open and run the desired notebook to train the model on the corresponding image size.
 
 ## Dependencies
 Make sure you have the following dependencies installed:
 - Keras
-- TensorFlow
+- TensorFlow2.17.1
 - NumPy
 - Pandas
 - Matplotlib
@@ -72,7 +69,12 @@ model.compile(
 )
 ```
 ## Dataset Source and Mandatory References
-The dataset used in this project is sourced from various publicly available repositories. When using this dataset, please ensure to cite the following sources:
+The dataset used in this project is sourced from various publicly available repositories. 
+
+References:
+-M.E.H. Chowdhury, T. Rahman, A. Khandakar, R. Mazhar, M.A. Kadir, Z.B. Mahbub, K.R. Islam, M.S. Khan, A. Iqbal, N. Al-Emadi, M.B.I. Reaz, M. T. Islam, “Can AI help in screening Viral and COVID-19 pneumonia?” IEEE Access, Vol. 8, 2020, pp. 132665 - 132676.
+-Rahman, T., Khandakar, A., Qiblawey, Y., Tahir, A., Kiranyaz, S., Kashem, S.B.A., Islam, M.T., Maadeed, S.A., Zughaier, S.M., Khan, M.S. and Chowdhury, M.E., 2020. Exploring the Effect of Image Enhancement Techniques on COVID-19 Detection using Chest X-ray Images. arXiv preprint arXiv:2012.02238.
+
 
 - [BIMCV COVID-19](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590858128006-9e640421-6711)
 - [COVID-19 Image Repository](https://github.com/ml-workgroup/covid-19-image-repository/tree/master/png)
