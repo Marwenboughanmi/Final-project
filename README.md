@@ -91,6 +91,7 @@ References:
 - [Chest X-ray Pneumonia](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ## License
-The dataset used in this project is licensed under Creative Commons License. For additional information please visit https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+Dataset used in this project is licensed under Creative Commons License. Refer to the dataset site for additional information: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+
 The project is licensed under the MIT license.
 ```
